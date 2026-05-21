@@ -29,7 +29,7 @@ resource "aws_security_group" "AC2-sg-ec2" {
 
   ingress {
     from_port       = 80
-    to_port         = 81
+    to_port         = 8080
     protocol        = "tcp"
     security_groups = [aws_security_group.AC2-sg-alb.id]
   }
